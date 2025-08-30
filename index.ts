@@ -15,10 +15,7 @@ class Logger {
 
 const logger = new Logger();
 
-const urlsToFetch: string[] = [
-  process.env.CHESS_BACKEND_URL!,
-  process.env.GOOGLE_URL!,
-];
+const urlsToFetch: string[] = [process.env.CHESS_BACKEND_URL!];
 
 async function fetchAllUrls() {
   logger.info("Starting to fetch URLs...");
