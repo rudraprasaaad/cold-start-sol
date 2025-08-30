@@ -37,7 +37,7 @@ async function fetchAllUrls() {
   logger.info("Finished fetching all URLs for this interval.");
 }
 
-const TEN_MINUTES_IN_MS = 1000;
+const TEN_MINUTES_IN_MS = 10 * 60 * 1000;
 
 fetchAllUrls();
 
