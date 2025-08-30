@@ -2,6 +2,12 @@
   "name": "cold-start",
   "module": "index.ts",
   "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "start" : "bun run ./dist/index.js",
+    "build": "bun build ./src/index.ts --outdir ./dist --target=bun --minify",
+    "dev": "bun --watch run src/index.ts"
+  },
   "private": true,
   "devDependencies": {
     "@types/bun": "latest"
